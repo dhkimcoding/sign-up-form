@@ -1,19 +1,32 @@
 body {
     display: flex;
     height: 100vh;
+    margin: 0;
 }
 
-.left-image {
+.left-image-container {
     flex: 7;
 }
 
-.left-image > div {
-    height: 20%;
+.left-image-container > img {
     width: 100%;
-    margin-top: 200px;
+    height: 100%;
 }
 
-.right-content {
+.left-image-container > div {
+    height: 20%;
+    width: 100%;
+    position: relative;
+    bottom: 75%;
+    font-size: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content-container {
     flex: 13;
     display: flex;
     flex-direction: column;
